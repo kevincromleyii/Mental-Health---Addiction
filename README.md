@@ -1,0 +1,2 @@
+- Starting to make websites for my mental health journey
+- Looking to help out the world by creating and producing websites for the benefit of humankind with my own life experiences.
