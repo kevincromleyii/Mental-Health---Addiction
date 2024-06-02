@@ -1,0 +1,139 @@
+:root {
+    --primary: #2a2c30;
+    --white: white;
+    --black: black;
+  }
+  
+  .w-layout-blockcontainer {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .w-layout-blockcontainer {
+      max-width: 728px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .w-layout-blockcontainer {
+      max-width: none;
+    }
+  }
+  
+  .navbar {
+    background-color: var(--primary);
+    display: block;
+  }
+  
+  .container {
+    color: #faf9f6;
+    flex: 1;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .heading {
+    color: #e96e10;
+    text-align: center;
+    font-family: Bitter, serif;
+    font-size: 60px;
+  }
+  
+  .paragraph {
+    color: #fdfdfd;
+    text-align: center;
+    margin-top: 45px;
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    line-height: 22px;
+  }
+  
+  .splash {
+    background-image: radial-gradient(circle, rgba(10, 10, 10, 0), rgba(4, 4, 4, .57) 0%, rgba(3, 3, 3, .66) 74%, rgba(0, 0, 0, .99)), url('../images/hiking.jpg');
+    background-position: 0 0, 50%;
+    background-size: auto, cover;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75vh;
+    display: flex;
+    position: relative;
+  }
+  
+  .logo {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  
+  .nav-link {
+    color: var(--white);
+    text-align: left;
+    flex-flow: row;
+    margin-left: 68px;
+    margin-right: auto;
+    font-family: Exo, sans-serif;
+    display: inline-block;
+  }
+  
+  .about {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    background-color: var(--primary);
+    flex-flow: row;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    padding-top: 75px;
+    padding-left: 75px;
+    display: flex;
+  }
+  
+  .container-2 {
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+    flex-flow: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: static;
+  }
+  
+  .div-block {
+    flex-flow: column;
+    display: flex;
+  }
+  
+  .resources {
+    background-color: var(--primary);
+  }
+  
+  .paragraph-2 {
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+      margin-right: auto;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .about {
+      display: block;
+    }
+  
+    .container-2 {
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      display: block;
+    }
+  }
